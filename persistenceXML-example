@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="persistence_unit" >
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>dev.said.onlinemedclinic.domains.Disease</class>
+        <class>dev.said.onlinemedclinic.domains.Doctor</class>
+        <class>dev.said.onlinemedclinic.domains.DoctorSchedule</class>
+        <class>dev.said.onlinemedclinic.domains.Document</class>
+        <class>dev.said.onlinemedclinic.domains.History</class>
+        <class>dev.said.onlinemedclinic.domains.Order</class>
+        <class>dev.said.onlinemedclinic.domains.Specialization</class>
+        <class>dev.said.onlinemedclinic.domains.User</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="" />
+            <property name="jakarta.persistence.jdbc.user" value=""/>
+            <property name="jakarta.persistence.jdbc.password" value=""/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.schema-generation.database.action" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
